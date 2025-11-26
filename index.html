@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>لعبة فرز النفايات للأطفال</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>لعبة فرز النفايات 🎉</h1>
+  <p>اسحب كل عنصر إلى السلة الصحيحة لتكسب النقاط!</p>
+  <div>النقاط: <span id="score">0</span> | المحاولات المتبقية: <span id="lives">5</span></div>
+</header>
+
+<main>
+  <section class="items-container" id="itemsContainer"></section>
+
+  <section class="bins-container">
+    <div class="bin" data-type="organic">🥕<br>سلة العضوية</div>
+    <div class="bin" data-type="glass">🥛<br>سلة الزجاج</div>
+    <div class="bin" data-type="plastic">🥤<br>سلة البلاستيك</div>
+    <div class="bin" data-type="trash">🗑️<br>سلة الورق</div>
+  </section>
+</main>
+
+<div id="message" class="message"></div>
+<button id="resetBtn">إعادة اللعبة</button>
+
+<script src="script.js"></script>
+</body>
+</html>
